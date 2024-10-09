@@ -1,0 +1,132 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffe8d6; /* Soft peach background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Container Styling */
+.container {
+  max-width: 500px;
+  width: 100%;
+  background-color: #ffffff; /* White background for the box */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); /* Light shadow */
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+/* Heading Styling */
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  color: #d2691e; /* Chocolate color */
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8b5a2b; /* Saddle brown */
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+input[type="date"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #cd853f; /* Peru color */
+  font-size: 16px;
+  color: #4a4e69; /* Dark slate blue */
+  background-color: #fff3e0; /* Very light peach */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+input[type="date"]:hover {
+  background-color: #ffe5b4; /* Lighter peach on hover */
+}
+
+input[type="date"]:focus {
+  border-color: #d2691e; /* Chocolate color on focus */
+  outline: none;
+  background-color: #ffffff; /* White background on focus */
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #d2691e; /* Chocolate color */
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 10px rgba(210, 105, 30, 0.3); /* Button shadow */
+}
+
+button:hover {
+  background-color: #b5651d; /* Darker chocolate on hover */
+  box-shadow: 0 6px 16px rgba(181, 101, 25, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Result Styling */
+.result {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #4a4e69; /* Dark slate blue */
+  font-weight: 500;
+}
+
+/* Highlighting Years */
+.highlight {
+  font-size: 24px;
+  font-weight: 700;
+  color: #8b4513; /* Saddle brown for emphasis */
+}
+
+/* Small Font for Other Age Details */
+.age-details {
+  font-size: 16px;
+  color: #4a4e69; /* Dark slate blue */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .container {
+      padding: 30px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  h3 {
+      font-size: 16px;
+  }
+  button {
+      font-size: 16px;
+  }
+}

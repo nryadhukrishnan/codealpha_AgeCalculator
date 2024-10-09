@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warm Age Calculator</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Warm Age Calculator</h2>
+    <h3>Enter your birthday...</h3>
+    <form id="ageForm">
+        <input type="date" id="dob" required>
+        <button type="submit">Calculate Age</button>
+    </form>
+    <button onclick="refreshPage()">Refresh</button>
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
